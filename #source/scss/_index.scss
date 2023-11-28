@@ -195,6 +195,7 @@
     ul,
     ol {
         max-width: 370px;
+        padding-left: 20px;
     }
 
 }
@@ -377,14 +378,16 @@
         font-style: normal;
         font-weight: 400;
         line-height: 150%;
-        padding-left: 14px;
+        padding-left: 60px;
+        display: inline-flex;
     }
 
     input+span:before {
         content: '';
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 26px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 14px;
         width: 20px;
         height: 20px;
         border: 1px solid #fff;
@@ -469,6 +472,11 @@
 //  ---=== ADAPTIVE  ===--- //
 
 @media (max-width:1399.8px) {
+
+    .contact>img {
+        width: 50%;
+    }
+
     .advantages:before {
         width: 45%;
     }
@@ -489,9 +497,14 @@
 }
 
 @media (max-width:1199.8px) {
+    .contact__form {
+        max-width: 420px;
+    }
+
     .advantages:before {
         width: 49%;
     }
+
     .heroscreen__title h1 {
         font-size: 32px;
         margin-bottom: 20px;
@@ -507,6 +520,49 @@
 }
 
 @media (max-width:991.8px) {
+    .check-boxes {
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+
+    .checkfield+.checkfield {
+        margin-top: 20px;
+    }
+
+    .agreement-row {
+        margin-bottom: 35px;
+    }
+
+    .contact>img {
+        width: 100%;
+        height: 33%;
+    }
+
+    .contact__form {
+        margin: 0;
+        max-width: 480px;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .contact__content {
+        margin-top: 70px;
+        margin-bottom: 120px;
+    }
+
+    .developer {
+        padding: 100px 0;
+    }
+
+    .developer__left {
+        margin-bottom: 30px;
+    }
+
+    .advantages:before {
+        width: 65%;
+    }
+
     .about__img {
         filter: brightness(70%);
     }
@@ -538,6 +594,19 @@
 }
 
 @media (max-width:767.8px) {
+    .advantages {
+        padding: 100px 0;
+    }
+
+    .advantages__content ol,
+    .advantages__content ul {
+        max-width: 100%;
+    }
+
+    .advantages:before {
+        width: 100%;
+    }
+
     .about__content {
         padding-bottom: 45px;
     }
@@ -578,9 +647,18 @@
         height: 90%;
     }
 
+    .contact__content {
+        margin-top: 50px;
+        margin-bottom: 120px;
+    }
+
+
 }
 
 @media (max-width:425px) {
+    .contact__content {
+        margin-top: 20px;
+    }
     .heroscreen__title h1 {
         font-size: 28px;
         margin-bottom: 18px;
