@@ -28,7 +28,10 @@
         <main class="main">
 
             <section class="heroscreen">
-                <img src="img/heroscreen.jpg" alt="image">
+                <picture>
+                    <source srcset="img/hero_bg_mobile.png" media="(max-width: 767.8px)">
+                    <img src="img/heroscreen.jpg" alt="image">
+                </picture>
                 <div class="container">
                     <div class="heroscreen__inner">
                         <div class="row">
@@ -78,12 +81,15 @@
 
             <section class="about">
                 <div class="about__img">
-                    <img src="img/about_img.jpg" alt="image">
+                    <picture>
+                        <source srcset="img/about_bg_mobile.png" media="(max-width: 767.8px)">
+                        <img src="img/about_img.jpg" alt="image">
+                    </picture>
                 </div>
                 <div class="container">
                     <div class="row justify-content-end">
                         <div class="col-lg-7 col-md-11">
-                            <div class="about__content" data-aos="fade-left">
+                            <div class="about__content content-wrapper active" data-aos="fade-left">
                                 <h2 class="secttitle">
                                     O projekte
                                 </h2>
@@ -112,18 +118,33 @@
                                     môžete ísť s rodinou hneď relaxovať do wellness centra.
                                 </p>
                             </div>
+                            <div class="more-btn">
+                                <p class="more">
+                                    Uč sa viac
+                                    <img src="img/arrow_send.svg" alt="arrow">
+                                </p>
+                                <p class="less">
+                                    <img src="img/arrow_back.svg" alt="arrow">
+                                    Zavrieť
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             <div class="advantages">
-                <img src="img/advantages.jpg" alt="image">
+                <div class="advantages__img">
+                    <picture>
+                        <source srcset="img/advantages_mobile.png" media="(max-width: 767.8px)">
+                        <img src="img/advantages.jpg" alt="image">
+                    </picture>
+                </div>
                 <div class="container">
                     <div class="advantages__inner">
                         <div class="row">
                             <div class="col-xl-6 col-lg-8">
-                                <div class="advantages__content" data-aos="fade-right" data-aos-easing="ease-in-back">
+                                <div class="advantages__content content-wrapper" data-aos="fade-right" data-aos-easing="ease-in-back">
                                     <h2 class="secttitle">
                                         Výhody:
                                     </h2>
@@ -158,8 +179,15 @@
                                             športov
                                         </li>
                                     </ul>
-                                    <p>
-
+                                </div>
+                                <div class="more-btn">
+                                    <p class="more">
+                                        Uč sa viac
+                                        <img src="img/arrow_send.svg" alt="arrow">
+                                    </p>
+                                    <p class="less">
+                                        <img src="img/arrow_back.svg" alt="arrow">
+                                        Zavrieť
                                     </p>
                                 </div>
                             </div>
@@ -169,7 +197,12 @@
             </div>
 
             <section class="developer">
-                <img src="img/developer_bg.jpg" alt="background">
+                <div class="developer__img">
+                    <picture>
+                        <source srcset="img/developer_bg_mobile.png" media="(max-width: 767.8px)">
+                        <img src="img/developer_bg.jpg" alt="background">
+                    </picture>
+                </div>
                 <div class="container">
                     <div class="developer__inner">
                         <div class="row justify-content-between">
@@ -269,7 +302,7 @@
                                     <div class="agreement-row">
                                         <label class="checkfield">
                                             <input type="checkbox">
-                                            <span>suhlasim so spracovanim osobnych udajov *</span>
+                                            <span>suhlasim so spracovanim osobnych udajov <span>*</span></span>
                                         </label>
                                     </div>
 
@@ -296,6 +329,7 @@
         </main>
     </div>
 
+    <script src="js/lib/jquery.js"></script>
     <script src="js/lib/aos.js"></script>
     <script src="js/main.js"></script>
 
